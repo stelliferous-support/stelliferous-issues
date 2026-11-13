@@ -10,3 +10,7 @@ an issue, comment or react.
 
 Reports come from inside the game, through its Report a Bug window. That window is not in a release
 yet.
+
+## Support
+
+For support questions, email [support@playstelliferous.com](mailto:support@playstelliferous.com).
