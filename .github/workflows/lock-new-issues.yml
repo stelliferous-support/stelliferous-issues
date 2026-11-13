@@ -1,0 +1,14 @@
+name: Lock new issues
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh issue lock "$NUMBER" --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
